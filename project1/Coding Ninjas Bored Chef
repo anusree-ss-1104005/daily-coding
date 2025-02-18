@@ -1,0 +1,12 @@
+#include<map>
+int boredChef(int n, int k, string &s) {
+   // Write your code here.
+   map<char, int> mapp;
+   for(int i=0;i<s.length();i++){
+      mapp[s[i]]++;
+      if(mapp[s[i]] == k){
+         return 1;
+      }
+   }
+   return 0;
+}
